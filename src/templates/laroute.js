@@ -76,7 +76,7 @@
 
             getByAction : function(action) {
                 for (var key in this.routes) {
-                    if (this.routes.hasOwnProperty(key) && this.routes[key].action === action) {
+                    if (this.routes.hasOwnProperty(key) && this.routes[key].action.indexOf(action) > -1) {
                         return this.routes[key];
                     }
                 }
